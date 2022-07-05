@@ -1,0 +1,365 @@
+
+
+
+
+/* FOTO INDEX PRINCIPAL Y AGREGUE ANIMACIONES*/
+.fotop{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    
+
+    }
+    .fotop ul{
+     display: flex;
+     padding: 0%;
+     width: 400%;
+     animation: cambio 20s infinite;
+     animation-direction: alternate;
+     
+    }
+    .fotop li{
+     width: 100%;
+     list-style: none;
+     
+   }
+    .fotop img{
+     width: auto;
+     height: auto;
+     max-height: 90%;
+     max-width: 70%;
+     
+
+
+    }
+
+    @keyframes cambio{
+     0% {margin-left: 0;}
+     20% { margin-left: 0;}
+
+     25% {margin-left: -100%;}
+     45% {margin-left: -100%;}
+
+     55% {margin-left: -200%;}
+     70% {margin-left: -200%;}
+
+     75% {margin-left: -300%;}
+     100% {margin-left: -300%;}
+    }
+
+
+     /* EL DISEÑO GENERAL*/
+  
+  .bodyy{
+    border: 10cm;
+     text-align: center;
+     background-image: url("../img/fondocss.png");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+h1{
+    letter-spacing: 15px;
+    color: rgb(238, 77, 14);
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px 10px;
+    
+ }
+ 
+ 
+ /* TODOS LOS H2 MISMO DISEÑO */
+ h2{
+     color: rgb(243, 83, 9);
+     text-align: center;
+     }
+     
+    h2{
+        color: rgb(245, 73, 6);
+        font-style:oblique 
+        }
+       
+        
+        /* ACOMODAR LAS VIÑETAS */
+    .navigation ul{
+        margin: 12px 26px;
+        padding: 10px 12px;
+        list-style: none;
+        text-align: center;
+        font-size: 1.2rem;
+        
+    }
+    .navigation ul li{
+        display: inline-block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        color: chocolate;
+        
+        }
+        .navigation ul li a:hover{
+            background-color :rgb(238, 189, 130) ;
+            transition: background-color 3s ease-out;
+            filter: opacity (0.9);
+            }
+
+            /* DISEÑO DE TODOS LOS PARRAFOS */
+    .parrafo{
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+        border-style:double;
+        border-width: 2px; 
+        margin: 15px 26px;
+        border-color: rgb(138, 130, 121);
+        color: orange;
+        
+       }
+
+
+       @keyframes maquina {
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0;
+        }
+       }
+
+
+      /* SECCION SHOP */
+  .card:hover {
+    filter: opacity(0.7);
+    transform: scale(1.04);
+  }
+  
+  .card{
+    display:block;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+  .card-body{
+    background-color: rgb(71, 70, 69);
+  }
+  .card-text{
+    font-style: italic;
+  }
+
+
+  .row{
+    margin:auto;
+    padding: 80px;
+    
+  }
+ 
+  .card{
+    border-style: none;
+   
+  }
+
+  .col{
+    transition: background-color 9s ease-out;
+  }
+
+  .card-header{
+    color: orange;
+    background-color: rgb(75, 70, 70);
+  }
+
+  .card-body{
+    color: orange;
+    background-color: rgb(75, 70, 70);
+  }
+
+  .btn{
+    background-color: orange;
+    border: none;
+  }
+
+  .card-footer{
+    background-color: black;
+  }
+
+
+  /* SECCION GALERIA */
+
+  .grid-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out;
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-1:hover {
+    filter: opacity(0.7);
+    transform: scale(1.04);
+  }
+  
+  .grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  
+  /* EL BACKGROUND DE FONDO CAMBIA A MEDIDA DE QUE SE CAMBIAN LAS DIMENSIONES */
+  @media (min-width:1024px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+  }
+ @media screen and (min-width:780px) and (max-width: 1024px){
+ body{
+  background-image: url(../img/1024c.webp);
+ }
+ 
+}
+  
+ @media screen and (min-width:480px) and (max-width: 780px){
+  body{
+    background-image: url(../img/coffe123.webp);
+   }
+  
+
+ }
+
+ @media screen and (min-width:480px){
+ }
+
+
+ /* SECCION FILOSOFIA */
+
+
+    .contenedor{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        float: left;
+      
+    }
+    .contenedor figure{
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+      
+    }
+    .contenedor figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+        
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        transition: all 400ms ease-out;
+        opacity: 10;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    /* SECCION CONTACTO */
+    .contactimg{
+        background-image: url("../img/fondocss.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    form{
+        display: flex;
+        margin: auto;
+        padding: 80px
+      }
+    
+      .form-label{
+        color: orange;
+      }
+       
+      .form-check-label{
+        color: orange;
+      }
+
+
+
+
+      /* FOOTER */
+
+     
+
+.footer-style {
+  padding-top: 50px;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 1;
+}
+footer {
+color: rgb(187, 104, 10);
+}
+footer h3 {
+margin-bottom: 30px;
+  font-weight: 800;
+}
+footer .footer-above {
+padding-top: 50px;
+background-color: #f5f6f7;
+
+}
+footer .footer-col {
+margin-bottom: 50px;
+}
+footer .footer-below {
+padding: 25px 0;
+background-color: #ffffff;
+}
